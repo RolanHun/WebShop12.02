@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="szerkezet.css" />
+    <link rel="stylesheet" href="kosar.css" />
+
+    <link rel="stylesheet" href="termekek.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="ajax.js"></script>
+    <script src="kosar.js"></script>
+    <script src="termek.js"></script>
+
+    <script src="script.js"></script>
+    <title>Webáruház 1.0</title>
+</head>
+
+<body>
+    <main>
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fizetes.html">Fizetés</a></li>
+                <li></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section class="termekek">
+                
+            </section>
+            <section class="kosar">
+                <h3>A Kosár tartalma</h3>
+                <div id="kosaram"></div>
+                <span id="osszar"></span>
+
+                <a href="fizetes.html"><button class="fizet">
+                        Tovább a fizetéshez...
+                    </button></a>
+            </section>
+            <p>
+                Keresés:
+                <input type="text" id="kereso" value="" />
+            </p>
+            <select id="rendezes">
+                <option id="NameListAsc" value="NameListAsc">Név szerint csökkenő</option>
+                <option id="NameListDesc" value="NameListDesc">Név szerint emelkedő</option>
+                <option id="CostListDesc" value="CostListDesc">Ár szerint csökkenő</option>
+                <option id="CostListAsc" value="CostListAsc">Ár szerint emelkedő</option>
+            </select>
+        </article>
+        <footer>
+            <div class="termek">
+            <h3 class="termeknev">asdr</h3>
+            <img src="kepek/kep_1.jpeg" alt="" class="kep" />
+            <p class="leiras">
+                asd
+            </p>
+            <button class="kosarba">Kosárba</button>
+            <span class="ar">125</span>
+        </div>
+    </footer>
+    </main>
+</body>
+
+</html>
